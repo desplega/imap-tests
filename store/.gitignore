@@ -1,0 +1,3 @@
+# In order to include the empty folder in the repository
+*
+!.gitignore

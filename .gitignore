@@ -1,0 +1,4 @@
+config/config.ini
+config/imap.php
+vendor/
+.vscode/

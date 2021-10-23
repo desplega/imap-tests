@@ -1,0 +1,12 @@
+[server]
+server_type = imap ;imap/pop3
+server_ssl = true
+server_host = imap.gmail.com
+server_port = 993
+server_user = name.surname@gmail.com
+server_password = "password"
+
+[mailtrap]
+mailtrap_host = smtp.mailtrap.io
+mailtrap_user = 0123456789abcd
+mailtrap_password = ef123456789abc
