@@ -20,7 +20,7 @@ $mail->Port = 2525;
 
 $mail->setFrom('from@example.com', 'First Last');
 $mail->addReplyTo('towho@example.com', 'John Doe');
-$mail->addAddress('helpdesk@desplega.com', 'Desplega');
+$mail->addAddress('helpdesk@company.com', 'Helpdesk');
 
 $mail->isHTML(true);
 
