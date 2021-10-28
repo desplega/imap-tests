@@ -1,4 +1,5 @@
 config/config.ini
 config/imap.php
+composer.lock
 vendor/
 .vscode/

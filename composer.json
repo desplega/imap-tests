@@ -2,6 +2,7 @@
     "require": {
         "webklex/php-imap": "^2.7",
         "symfony/mime": "^5.3",
-        "phpmailer/phpmailer": "^6.5"
+        "phpmailer/phpmailer": "^6.5",
+        "html2text/html2text": "^4.3"
     }
 }

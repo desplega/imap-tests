@@ -39,7 +39,10 @@ foreach ($messages as $message) {
 
     if ($message->hasHTMLBody()) {
         echo 'HTML body ---------------------------------<br>';
-        echo $message->getHTMLBody();
+        //echo nl2br(strip_tags($message->getHTMLBody()));
+        //echo nl2br(preg_replace("/\n\s+/", "\n", rtrim(html_entity_decode(strip_tags($message->getHTMLBody())))));
+        $html = new \Html2Text\Html2Text($message->getHTMLBody());
+        echo nl2br($html->getText());
         echo nl2br($message->getTextBody()); // This is the one I want to use!
     } elseif ($message->hasTextBody()) {
         echo 'Text body ---------------------------------<br>';
@@ -50,4 +53,5 @@ foreach ($messages as $message) {
 
     // Mark message as seen
     $message->setFlag('Seen');
+    unset($attachments);
 }
