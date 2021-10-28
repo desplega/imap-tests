@@ -40,7 +40,7 @@ foreach ($messages as $message) {
     if ($message->hasHTMLBody()) {
         echo 'HTML body ---------------------------------<br>';
         //echo nl2br(strip_tags($message->getHTMLBody()));
-        $html = new \Html2Text\Html2Text($message->getHTMLBody());
+        $html = new \Html2Text\Html2Text($message->getHTMLBody(), array('do_links' => 'inline', 'width' => 0));
         echo nl2br($html->getText());
         echo nl2br($message->getTextBody());
     } elseif ($message->hasTextBody()) {
