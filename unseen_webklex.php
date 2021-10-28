@@ -30,7 +30,7 @@ foreach ($messages as $message) {
         foreach ($attachments as $attachment) {
             echo 'Extension: ' . $attachment->getExtension() . '<br>'; // Requires: composer require symfony/mime
             echo 'Mime Type: ' . $attachment->getMimeType() . '<br>';
-            $status = $attachment->save('store/');
+            $status = $attachment->save('storage/');
             echo 'Stored status: ' . $status;
         }
     } else {
